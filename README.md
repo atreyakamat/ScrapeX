@@ -21,7 +21,7 @@ Follow these steps to get started with ScrapeX:
 
 ### 1. Clone the Repository:
 ```bash
-git clone https://github.com/yourusername/ScrapeX.git
+git clone https://github.com/atreyakamat/ScrapeX.git
 ```
 
 ### 2. Navigate to the Project Directory:
@@ -73,14 +73,6 @@ You can install all dependencies by running:
 pip install -r requirements.txt
 ```
 
----
-
-## License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## Contributing
 
 Feel free to fork the repository, submit issues, and create pull requests. Contributions are welcome!
@@ -97,7 +89,7 @@ To contribute:
 ## Contact
 
 For any questions or feedback, please open an issue in the GitHub repository or contact me directly at:  
-**Email:** your.email@example.com
+**Email:** atkamat1204@gmail.com
 
 ---
 
