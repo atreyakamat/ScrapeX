@@ -273,6 +273,6 @@ def scrape_website(start_url, max_pages=None):
     return all_data
 
 if __name__ == "__main__":
-    url = "https://antarman.goadoctor.co.in/"
+    url = "your-website-url-here"
     scraped_data = scrape_website(url, max_pages=100)  # Limit to 100 pages for safety
     logging.info(f"Scraped {len(scraped_data['images'])} images and {len(scraped_data['metadata'])} metadata items")
