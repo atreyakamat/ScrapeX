@@ -1,0 +1,9 @@
+# Scraper logs
+logs/scraper.log
+
+# Virtual environment
+venv/
+env/
+.env/
+.venv/
+ENV/
