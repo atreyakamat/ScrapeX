@@ -20,7 +20,7 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
 ]
 dependencies = [
-    "httpx[http2,socks]>=0.27",
+    "httpx[http2,socks]>=0.28.1",
     "beautifulsoup4>=4.12",
     "lxml>=5.0",
     "rich>=13.7",
