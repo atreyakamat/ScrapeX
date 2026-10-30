@@ -1,0 +1,21 @@
+name: Bug report
+description: Something isn't scraping the way it should
+labels: [bug]
+body:
+  - type: input
+    id: url
+    attributes: { label: Site URL (if public) }
+  - type: textarea
+    id: command
+    attributes: { label: Command or TUI settings used, render: shell }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened vs. what you expected }
+    validations: { required: true }
+  - type: textarea
+    id: log
+    attributes: { label: Relevant part of scrapex.log, render: text }
+  - type: input
+    id: env
+    attributes: { label: "OS / Python / Docker version" }

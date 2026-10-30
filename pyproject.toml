@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scrapex"
+dynamic = ["version"]
+description = "Fast, polite, async website scraper with an interactive terminal UI."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Atreya Kamat" }]
+requires-python = ">=3.10"
+keywords = ["scraper", "crawler", "web-scraping", "tui", "textual", "seo"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+]
+dependencies = [
+    "httpx[http2,socks]>=0.27",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "rich>=13.7",
+    "textual>=1.0",
+]
+
+[project.optional-dependencies]
+js = ["playwright>=1.45"]
+dev = ["pytest>=8", "pytest-asyncio>=0.24", "ruff>=0.6"]
+
+[project.scripts]
+scrapex = "scrapex.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/atreyakamat/ScrapeX"
+Issues = "https://github.com/atreyakamat/ScrapeX/issues"
+
+[tool.hatch.version]
+path = "src/scrapex/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/scrapex"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501"]

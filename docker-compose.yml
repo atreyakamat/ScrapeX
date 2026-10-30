@@ -1,0 +1,13 @@
+# Interactive UI:  docker compose run --rm scrapex
+# Headless crawl:  docker compose run --rm scrapex crawl https://example.com -n 50 -f md
+services:
+  scrapex:
+    build:
+      context: .
+      args:
+        WITH_JS: "false" # set to "true" to enable --js (adds ~400MB of Chromium)
+    image: scrapex:latest
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./output:/data

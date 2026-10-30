@@ -1,17 +1,30 @@
-# Scraper logs
-logs/scraper.log
-
-# Virtual environment
+# Virtual environments
 venv/
-env/
-.env/
 .venv/
+env/
 ENV/
-# Python cache files
+
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
-# Log files
+# Scrape output & logs (never commit scraped data)
+output/
+src/data/
+src/scraped-images/
 *.log
 logs/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.env

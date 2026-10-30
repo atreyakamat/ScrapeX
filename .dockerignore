@@ -1,0 +1,14 @@
+.git
+.github
+venv
+.venv
+**/__pycache__
+.pytest_cache
+.ruff_cache
+output
+src/data
+src/scraped-images
+src/logs
+src/scraper.py
+src/helpers.py
+*.log
