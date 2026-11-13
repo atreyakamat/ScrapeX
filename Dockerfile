@@ -4,7 +4,7 @@
 # TUI:              docker run -it --rm -v "$PWD/output:/data" scrapex
 # Headless:         docker run --rm -v "$PWD/output:/data" scrapex crawl https://example.com -n 100
 
-FROM python:3.12-slim AS base
+FROM python:3.15-slim AS base
 
 ARG WITH_JS=false
 ENV PYTHONDONTWRITEBYTECODE=1 \
