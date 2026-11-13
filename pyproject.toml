@@ -28,7 +28,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-js = ["playwright>=1.64.1"]
+js = ["playwright>=1.65.0"]
 dev = ["pytest>=9.2.0", "pytest-asyncio>=1.4.1.post1", "ruff>=0.17.3"]
 
 [project.scripts]
